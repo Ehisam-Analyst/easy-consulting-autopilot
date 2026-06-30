@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Generated proposals
+output/*.pdf
+output/*.docx
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
