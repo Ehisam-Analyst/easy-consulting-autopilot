@@ -1,7 +1,6 @@
 
 from docxtpl import DocxTemplate
 from datetime import date
-from docx2pdf import convert
 from config import TEMPLATE_FILE, OUTPUT_DIR
 
 template = DocxTemplate(str(TEMPLATE_FILE))
@@ -19,11 +18,9 @@ def generate_proposal(lead):
     template.render(context)
     filename = OUTPUT_DIR / f"{lead['company']}_Proposal.docx"   
     template.save( filename
-        
     )
-    filename_pdf =  f"output/{lead['company']}_Proposal.pdf"
-    convert(filename, filename_pdf)
+    
     
     print("Generating Proposal...")
 
-    return filename_pdf
+    return filename
