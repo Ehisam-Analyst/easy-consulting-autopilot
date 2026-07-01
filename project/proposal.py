@@ -2,7 +2,7 @@
 from docxtpl import DocxTemplate
 from datetime import date
 from datetime import datetime
-from config import TEMPLATE_FILE, OUTPUT_DIR
+from project.config import TEMPLATE_FILE, OUTPUT_DIR
 
 template = DocxTemplate(str(TEMPLATE_FILE))
 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
